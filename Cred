@@ -1,0 +1,15 @@
+import csv
+
+data = [
+    ['Username', 'Password'],
+    ['Anvi', '1234'],
+    ['Arshiya', '1164']
+]
+
+csv_file_path = 'credentials.csv'
+
+with open(csv_file_path, mode='w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerows(data)
+
+print(f"CSV file '{csv_file_path}' created successfully.")
